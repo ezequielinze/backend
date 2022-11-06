@@ -3,10 +3,10 @@ const fs = require('fs')
 
 
 class Productos {
-  constructor(id, nombre, presio, foto) {
+  constructor(id, nombre, precio, foto) {
     this.id = id
     this.nombre = nombre
-    this.presio = presio
+    this.precio = precio
     this.foto = foto
   }
 }
@@ -85,7 +85,7 @@ const eliminarArray = () => {
   cargarProducto()
 
 }
-eliminarArray()
+// eliminarArray()
 
 //eliminar objeto del array
 const eliminaObj = (id) => {

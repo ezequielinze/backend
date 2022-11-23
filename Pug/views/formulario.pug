@@ -1,0 +1,19 @@
+extends inicio 
+
+block formularios
+
+        h1='productos'
+        
+        form(action="/productos" method="post")
+         
+            label='Producto:'
+             input(type="text" name="producto")
+             br
+             br
+            label='precio:'
+             input(type="text" name="precio")
+             br 
+             br              
+            button='Enviar'
+            
+        

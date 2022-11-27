@@ -1,0 +1,4 @@
+hola,
+en mi proyecto voy a usar como motor de plantilla 'ejs'
+Decido usar ese motor por que se asemeja a react, lo entiendo mejor y lo domino mas.
+Handlebars me costo entenderlo y pug lo veo muy complicado 

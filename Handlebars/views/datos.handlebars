@@ -1,0 +1,22 @@
+{{!-- producto: 'pepe', precio: '500', img: 'kekek' --}}
+
+<h1>PRODUCTOS:</h1>
+
+{{#each productos}}
+<div>
+    <table>
+        <tr>
+            <th>producto:</th>
+            <th>precio:</th>
+            <th>img:</th>
+        </tr>
+
+        <tr>
+            <td>{{producto}}</td>
+            <td>{{precio}}</td>
+            <td>{{img}}</td>
+        </tr>
+    <hr/>
+    </table>
+</div>
+{{/each}}

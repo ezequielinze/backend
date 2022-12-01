@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motores de plantillas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <%- include('./formulario')-%>
+                <hr />
+            <%- include('./productos')-%>
+                <hr />
+                    <!-- <%- include('./chat')-%> -->
+        </div>
+        <div class="conteiner col-sm-6">
+            <h1>CENTRO DE MENSAJES</h1>
+            <form>
+                <div class="conteiner">
+                    <label class="font-weight-bold" for="producto">email</label>
+                    <input class="form-control" type="email" name="email">
+                </div>
+                <div class="conteiner" id="msj"></div>                
+                <div class="conteiner">
+                    <label class="font-weight-bold" for="img">nota</label>
+                    <textarea class="form-control" type="text" name="img"></textarea>
+                </div>
+                <button class="conteiner btn btn-primary my-3">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
